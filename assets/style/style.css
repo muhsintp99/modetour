@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: rgb(79, 174, 237);
+    --secondary-color: rgb(250, 250, 250);
+    --text-color: rgb(50, 50, 50);
+    --font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+
+section {
+    padding: 0px 35px;
+}
+
+
+header {
+    display: flex;
+    background: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+header ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 18px 20px 18px 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+button i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* banner started */
+
+.banner {
+    /* background-image: url(../images/images/Banner.png); */
+    background-image: url(../images/images/Banner.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .bg-image {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg-image h1 {
+    font-size: 54px;
+    letter-spacing: 0.8px;
+    color: var(--secondary-color);
+}
+
+.banner .bg-image p {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    /* padding-top: ; */
+}
+
+.banner .bg-image form {
+    background-color: var(--secondary-color);
+    padding: 5px 20px;
+    border-radius: 60px;
+    display: flex;
+}
+
+.banner .bg-image form .form-input {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    font-weight: 600;
+    justify-content: center;
+    border-right: 2px solid #0000001c;
+    padding: 8px 25px;
+    margin-right: 10px;
+}
+
+.hello {
+    border-right: none;
+}
+
+.banner .bg-image form .form-input input {
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    width: 240px;
+    outline: none;
+
+}
+
+.banner .bg-image form .form-input .hello {
+    width: 180px;
+}
+
+
+.from-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .bg-image form button {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border: none;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg-image form i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #343434;
+}
+
+/* destination start */
+
+/* .destination {
+    padding-top: 50px;
+} */
+
+.destination .title-des {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.destination .card-img {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.desc-main {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.destination .card {
+    text-align: center;
+}
+
+.destination .card-img img {
+    object-fit: fill;
+    height: 500px;
+    width: 800px;
+}
+
+.destination p {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.destination .desc-main .card:hover img {
+    transform: scaleY(1.8);
+    transition: 1s ease-in-out;
+}
