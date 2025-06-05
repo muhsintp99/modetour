@@ -156,11 +156,11 @@ button i {
 
 /* destination start */
 
-/* .destination {
-    padding-top: 50px;
-} */
+.destination {
+    overflow: hidden;
+}
 
-.destination .title-des {
+.title-des {
     text-align: center;
     padding: 50px 0px;
     font-size: 24px;
@@ -177,8 +177,9 @@ button i {
 
 .desc-main {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .destination .card {
@@ -200,4 +201,143 @@ button i {
 .destination .desc-main .card:hover img {
     transform: scaleY(1.8);
     transition: 1s ease-in-out;
+}
+
+/* packages start----------------------------------- */
+
+.packages {
+    padding-bottom: 50px;
+}
+
+.packages .card {
+    border: 0.8px solid #34343432;
+    border-radius: 12px;
+    overflow: hidden;
+    /* width: 27rem; */
+    box-shadow: 0 0 12px 2px #00000032;
+}
+
+.packages .card img {
+    width: 100%;
+    height: 350px;
+    /* object-fit: contain; */
+}
+
+.packages .card .fa-heart {
+    position: relative;
+    left: 372px;
+    top: -330px;
+    z-index: 99;
+    background: #e3cccc60;
+    color: azure;
+    padding: 13px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #000;
+}
+
+.pac-det {
+    padding: 15px;
+}
+
+.pac-det span {
+    color: #343434af;
+    font-size: 200;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.pac-det .reviww span .fa-star {
+    margin-bottom: 10px;
+    color: #efcb18;
+    margin-right: 8px;
+}
+
+.pac-det h5 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pac-det .loc,
+.pac-det h5 {
+    margin-bottom: 10px;
+
+}
+
+.packages .card .price {
+    padding: 15px;
+
+}
+
+.packages .card del {
+    color: #343434;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.packages .card .from small {
+    color: #34343465;
+}
+
+.packages .card .price .from {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.packages .card .price .days {
+    color: #34343465;
+}
+
+.pac-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width:768px) {
+    .pac-main {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .packages .card {
+        border: 0.8px solid #34343432;
+        border-radius: 12px;
+        overflow: hidden;
+        /* width: 27rem; */
+        box-shadow: 0 0 12px 2px #00000032;
+        width: 320px;
+    }
+}
+
+/* --------------footer start-------------- */
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.grid {
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.grid-1 {
+    background-color: #efcb18;
+}
+.grid-2 {
+    background-color: #fa8253;
+}
+.grid-3 {
+    background-color: #29d8e4;
+}
+.grid-4 {
+    background-color: #e575b3;
 }
